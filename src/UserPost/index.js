@@ -88,6 +88,7 @@ const UserPost = () =>
                                                         <Input.TextArea
                                                             rows={4}
                                                             value={body}
+                                                            onChange={(e) => setBodyText(e.target.value)}
                                                         />
                                                     </>
                                                 ) : (
