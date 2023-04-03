@@ -45,7 +45,9 @@ const CreatePost = () =>
                 <Space
                     style={{ margin: 10 }}
                 >
-                    <Button>
+                    <Button
+                        onClick={() => navigate('/')}
+                    >
                         Go Back
                     </Button>
                     <Button
