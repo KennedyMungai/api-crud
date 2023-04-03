@@ -17,6 +17,7 @@ const UserPost = () =>
                 style={{ width: '300px' }}
             />
             <br />
+            <br />
             <Space
                 size='small'
                 style={{ margin: 10 }}
