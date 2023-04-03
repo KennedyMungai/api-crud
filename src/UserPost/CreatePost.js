@@ -26,7 +26,11 @@ const CreatePost = () =>
                 <br />
                 <br />
                 <Input.TextArea
-
+                    type="text"
+                    placeholder='Enter Content'
+                    onChange={(e) => setValues({ ...values, body: e.target.value })}
+                    value={body}
+                    style={{ width: '400px' }}
                 />
             </form>
         </div>
