@@ -33,6 +33,21 @@ const CreatePost = () =>
                     style={{ width: '400px' }}
                     size='large'
                 />
+                <br />
+                <br />
+                <Space
+                    style={{ margin: 10 }}
+                >
+                    <Button>
+                        Go Back
+                    </Button>
+                    <Button
+                        type='primary'
+                        htmlType='submit'
+                    >
+                        Submit
+                    </Button>
+                </Space>
             </form>
         </div>
     )
