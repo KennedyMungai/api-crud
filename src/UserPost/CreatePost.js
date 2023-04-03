@@ -19,11 +19,8 @@ const CreatePost = () =>
     const handleSubmit = (e) =>
     {
         e.preventDefault()
-
         dispatch(createPost({ values }))
-
         setValues({ title: "", body: "" })
-
         setShowPost(true)
     }
 
