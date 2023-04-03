@@ -12,7 +12,10 @@ const UserPost = () =>
 
     const fetchUserPostsHandler = () =>
     {
-
+        if (!id)
+        {
+            window.alert("Please Provide an Id")
+        }
     }
 
     return (
