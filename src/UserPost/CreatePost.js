@@ -5,6 +5,8 @@ import { useDispatch, useSelector } from 'react-redux'
 
 const CreatePost = () =>
 {
+    const [values, setValues] = useState({ title: '', body: '' })
+
     return (
         <div>CreatePost</div>
     )
