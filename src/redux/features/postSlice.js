@@ -63,7 +63,13 @@ const postSlice = createSlice(
             body: "",
             edit: false
         },
-        reducers: {},
+        reducers: {
+            setEdit: (state, action) =>
+            {
+                state.edit = action.payload.edit,
+                    state.body = action.payload.body
+            }
+        },
         extraReducers: {
             [getPost.pending]: (state, action) =>
             {
