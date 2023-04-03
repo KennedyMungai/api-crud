@@ -9,7 +9,7 @@ import LoadingCard from './LoadingCard'
 const UserPost = () =>
 {
     const [id, setId] = useState()
-    const [bodyText, setBodyText] = useState()
+    const [bodyText, setBodyText] = useState("")
 
     const navigate = useNavigate()
     const dispatch = useDispatch()
