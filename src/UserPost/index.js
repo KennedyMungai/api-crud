@@ -7,7 +7,9 @@ const UserPost = () =>
     const [id, setId] = useState()
 
     return (
-        <div>UserPost</div>
+        <div className="container">
+            <h1 style={{ textAlign: 'center' }}>Fetch Posts</h1>
+        </div>
     )
 }
 
