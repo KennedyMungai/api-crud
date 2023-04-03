@@ -63,6 +63,7 @@ const postSlice = createSlice(
             body: "",
             edit: false
         },
+        reducers: {},
         extraReducers: {
             [getPost.pending]: (state, action) =>
             {
