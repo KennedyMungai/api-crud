@@ -70,6 +70,16 @@ const UserPost = () =>
                                         title={post[0].title}
                                     >
                                         <p>User Id: {post[0].id}</p>
+                                        {
+                                            edit ?
+                                                (
+                                                    <>
+
+                                                    </>
+                                                ) : (
+                                                    <span>{post[0].body}</span>
+                                                )
+                                        }
                                         <span>{post[0].body}</span>
                                     </Card>
                                     <Space
