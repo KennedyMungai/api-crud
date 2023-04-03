@@ -20,6 +20,8 @@ const CreatePost = () =>
         e.preventDefault()
 
         dispatch(createPost({ values }))
+
+        setValues({ title: "", body: "" })
     }
 
     return (
