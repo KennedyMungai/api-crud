@@ -11,7 +11,7 @@ const UserPost = () =>
     const [id, setId] = useState()
     const navigate = useNavigate()
     const dispatch = useDispatch()
-    const { loading, post } = useSelector((state) => ({ ...state.app }))
+    const { loading, post, edit, body } = useSelector((state) => ({ ...state.app }))
 
     const fetchUserPostsHandler = () =>
     {
