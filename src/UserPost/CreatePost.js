@@ -12,6 +12,7 @@ const CreatePost = () =>
 
     const dispatch = useDispatch()
     const navigate = useNavigate()
+    const { post, loading } = useSelector((state) => ({ ...state.app }))
 
     const { title, body } = values
 
