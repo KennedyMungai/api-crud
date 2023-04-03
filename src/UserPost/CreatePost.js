@@ -21,6 +21,7 @@ const CreatePost = () =>
                     placeholder='Enter Title'
                     onChange={(e) => setValues({ ...values, title: e.target.value })}
                     value={title}
+                    style={{ width: '400px' }}
                 />
             </form>
         </div>
