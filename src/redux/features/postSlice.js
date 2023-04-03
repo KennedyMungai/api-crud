@@ -33,7 +33,7 @@ const postSlice = createSlice(
             {
                 state.loading = false
                 state.error = action.payload
-            }
+            },
             [deletePost.pending]: (state, action) =>
             {
                 state.loading = true
