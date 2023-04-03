@@ -4,6 +4,8 @@ import React, { useEffect, useState } from 'react'
 
 const UserPost = () =>
 {
+    const [id, setId] = useState()
+
     return (
         <div>UserPost</div>
     )
