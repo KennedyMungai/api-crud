@@ -8,7 +8,7 @@ export const getPost = createAsyncThunk("post/getPost", async ({ id }) =>
 
 export const deletePost = createAsyncThunk("post/deletePost", async ({ id }) =>
 {
-    return delete (`https://jsonplaceholder.typicode.com/posts/${id}`).then((res) => res.json())
+    return fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, { method: 'DELETE' }).then((res) => res.json())
 })
 
 const postSlice = createSlice(
@@ -33,6 +33,20 @@ const postSlice = createSlice(
             {
                 state.loading = false
                 state.error = action.payload
+            }
+            [deletePost.pending]: (state, action) =>
+            {
+                state.loading = true
+            },
+            [deletePost.fulfilled]: (state, action) =>
+            {
+                state.loading = false
+                state.post = action.payload
+            },
+            [deletePost.error]: (state, action) =>
+            {
+                state.loading = false
+                state.error = [action.payload]
             }
         }
     }
