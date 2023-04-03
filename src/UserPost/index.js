@@ -17,9 +17,11 @@ const UserPost = () =>
         {
             window.alert("Please Provide an Id")
         }
-
-        dispatch(getPost({ id }))
-        setId("")
+        else
+        {
+            dispatch(getPost({ id }))
+            setId("")
+        }
     }
 
     return (
