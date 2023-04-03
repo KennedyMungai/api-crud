@@ -22,6 +22,8 @@ const CreatePost = () =>
         dispatch(createPost({ values }))
 
         setValues({ title: "", body: "" })
+
+        setShowPost(true)
     }
 
     return (
