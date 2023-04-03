@@ -1,5 +1,5 @@
 import { Button, Card, Input, Space } from 'antd'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 
 const UserPost = () =>
