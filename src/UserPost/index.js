@@ -80,7 +80,7 @@ const UserPost = () =>
                                             style={{ cursor: 'pointer' }}
                                             type='primary'
                                             danger
-                                            onClick={() => dispatch(deletePost({ id }))}
+                                            onClick={() => dispatch(deletePost({ id: post[0].id }))}
                                         >
                                             Delete
                                         </Button>
