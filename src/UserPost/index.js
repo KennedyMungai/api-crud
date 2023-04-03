@@ -8,7 +8,7 @@ const UserPost = () =>
 {
     const [id, setId] = useState()
     const navigate = useNavigate()
-
+    const dispatch = useDispatch()
 
     const fetchUserPostsHandler = () =>
     {
