@@ -110,7 +110,7 @@ const UserPost = () =>
                                         }
                                         <span>{post[0].body}</span>
                                     </Card>
-                                    {edit && (<Space
+                                    {!edit && (<Space
                                         size='middle'
                                         style={{ marginTop: 35, marginLeft: 5, float: 'right' }}
                                     >
