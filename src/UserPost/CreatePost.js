@@ -10,6 +10,7 @@ const CreatePost = () =>
     const [showPost, setShowPost] = useState(false)
 
     const dispatch = useDispatch()
+    const navigate = useNavigate()
 
     const { title, body } = values
 
