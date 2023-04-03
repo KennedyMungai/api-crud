@@ -2,6 +2,7 @@ import { Button, Card, Input, Space } from 'antd'
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
+import { createPost } from '../redux/features/postSlice'
 
 
 const CreatePost = () =>
@@ -17,6 +18,8 @@ const CreatePost = () =>
     const handleSubmit = (e) =>
     {
         e.preventDefault()
+
+        dispatch(createPost({ values }))
     }
 
     return (
