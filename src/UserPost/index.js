@@ -100,16 +100,21 @@ const UserPost = () =>
                                                                 {
                                                                     dispatch(updatePost(
                                                                         {
-                                                                            id: post[0].id, 
+                                                                            id: post[0].id,
                                                                             title: post[0].title,
                                                                             body: bodyText
                                                                         }
-                                                                        ))
+                                                                    ))
                                                                 }}
                                                             >
                                                                 Save
                                                             </Button>
-                                                            <Button>
+                                                            <Button
+                                                                onClick={() =>
+                                                                {
+                                                                    dispatch(setEdit({ edit: false }))
+                                                                }}
+                                                            >
                                                                 Cancel
                                                             </Button>
                                                         </Space>
