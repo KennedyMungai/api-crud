@@ -99,9 +99,7 @@ const UserPost = () =>
                                                             >
                                                                 Save
                                                             </Button>
-                                                            <Button
-                                                                type='primary'
-                                                            >
+                                                            <Button>
                                                                 Cancel
                                                             </Button>
                                                         </Space>
