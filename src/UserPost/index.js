@@ -15,6 +15,15 @@ const UserPost = () =>
     const dispatch = useDispatch()
     const { loading, post, edit, body } = useSelector((state) => ({ ...state.app }))
 
+    useEffect(() =>
+    {
+        if (body)
+        {
+            setBodyText(body)
+        }
+    }, [body])
+
+
     const fetchUserPostsHandler = () =>
     {
         if (!id)
@@ -78,7 +87,7 @@ const UserPost = () =>
                                                     <>
                                                         <Input.TextArea
                                                             rows={4}
-                                                            value={bodyText}
+                                                            value={body}
                                                         />
                                                     </>
                                                 ) : (
