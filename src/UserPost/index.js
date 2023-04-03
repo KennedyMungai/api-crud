@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom'
 const UserPost = () =>
 {
     const [id, setId] = useState()
+    const navigate = useNavigate()
 
 
     const fetchUserPostsHandler = () =>
