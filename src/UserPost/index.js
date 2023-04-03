@@ -6,6 +6,12 @@ const UserPost = () =>
 {
     const [id, setId] = useState()
 
+
+    const fetchUserPostsHandler = () =>
+    {
+
+    }
+
     return (
         <div className="container">
             <h1 style={{ textAlign: 'center' }}>Fetch Posts</h1>
