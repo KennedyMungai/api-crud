@@ -30,18 +30,18 @@ const CreatePost = () =>
         return (
             <>
                 {
-                    loading &&
-                    (<LoadingCard count={1} />) : (
-                <div className="site-card-border-less-wrapper">
-                    <Card
-                        type='inner'
-                        title={post[0].title}
-                    >
-                        <p>User Id: {post[0].id}</p>
-                        <span>{post[0].body}</span>
-                    </Card>
-                </div>
-                )
+                    loading ?
+                        (<LoadingCard count={1} />) : (
+                            <div className="site-card-border-less-wrapper">
+                                <Card
+                                    type='inner'
+                                    title={post[0].title}
+                                >
+                                    <p>User Id: {post[0].id}</p>
+                                    <span>{post[0].body}</span>
+                                </Card>
+                            </div>
+                        )
                 }
             </>
         )
