@@ -12,6 +12,11 @@ const CreatePost = () =>
 
     const { title, body } = values
 
+    const handleSubmit = (e) =>
+    {
+
+    }
+
     return (
         <div>
             <form onSubmit={handleSubmit}>
