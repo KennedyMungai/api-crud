@@ -24,6 +24,7 @@ const UserPost = () =>
             >
                 <Button
                     type='primary'
+                    onClick={fetchUserPostsHandler}
                 >
                     Fetch User Post
                 </Button>
