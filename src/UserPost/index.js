@@ -2,7 +2,7 @@ import { Button, Card, Input, Space } from 'antd'
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-import { getPost } from '../redux/features/postSlice'
+import { deletePost, getPost } from '../redux/features/postSlice'
 import LoadingCard from './LoadingCard'
 
 
@@ -80,6 +80,7 @@ const UserPost = () =>
                                             style={{ cursor: 'pointer' }}
                                             type='primary'
                                             danger
+                                            onClick={() => dispatch(deletePost({ id }))}
                                         >
                                             Delete
                                         </Button>
