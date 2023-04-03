@@ -74,7 +74,10 @@ const UserPost = () =>
                                             edit ?
                                                 (
                                                     <>
-
+                                                        <Input.TextArea
+                                                            rows={4}
+                                                            value={ }
+                                                        />
                                                     </>
                                                 ) : (
                                                     <span>{post[0].body}</span>
