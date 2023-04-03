@@ -86,7 +86,7 @@ const UserPost = () =>
                                         <Button
                                             style={{ cursor: 'pointer' }}
                                             type='primary'
-                                            danger
+                                            primary
                                         >
                                             Edit
                                         </Button>
