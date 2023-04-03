@@ -23,6 +23,8 @@ const CreatePost = () =>
                     value={title}
                     style={{ width: '400px' }}
                 />
+                <br />
+                <br />
             </form>
         </div>
     )
