@@ -8,6 +8,8 @@ const CreatePost = () =>
     const [values, setValues] = useState({ title: '', body: '' })
     const [showPost, setShowPost] = useState(false)
 
+    const dispatch = useDispatch()
+
     return (
         <div>CreatePost</div>
     )
