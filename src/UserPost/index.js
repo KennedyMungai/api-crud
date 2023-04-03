@@ -96,6 +96,16 @@ const UserPost = () =>
                                                         >
                                                             <Button
                                                                 type='primary'
+                                                                onClick={() =>
+                                                                {
+                                                                    dispatch(updatePost(
+                                                                        {
+                                                                            id: post[0].id, 
+                                                                            title: post[0].title,
+                                                                            body: bodyText
+                                                                        }
+                                                                        ))
+                                                                }}
                                                             >
                                                                 Save
                                                             </Button>
