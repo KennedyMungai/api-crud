@@ -16,7 +16,7 @@ const CreatePost = () =>
 
     const handleSubmit = (e) =>
     {
-
+        e.preventDefault()
     }
 
     return (
