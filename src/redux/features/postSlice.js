@@ -131,4 +131,6 @@ const postSlice = createSlice(
     }
 )
 
+export const { setEdit } = postSlice.actions
+
 export default postSlice.reducer
