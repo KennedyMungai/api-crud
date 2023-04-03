@@ -9,6 +9,8 @@ import LoadingCard from './LoadingCard'
 const UserPost = () =>
 {
     const [id, setId] = useState()
+    const [body, setbody] = useState(second)
+
     const navigate = useNavigate()
     const dispatch = useDispatch()
     const { loading, post, edit, body } = useSelector((state) => ({ ...state.app }))
