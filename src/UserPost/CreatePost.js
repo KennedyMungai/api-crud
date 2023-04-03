@@ -25,6 +25,9 @@ const CreatePost = () =>
                 />
                 <br />
                 <br />
+                <Input.TextArea
+
+                />
             </form>
         </div>
     )
