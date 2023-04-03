@@ -10,6 +10,8 @@ const CreatePost = () =>
 
     const dispatch = useDispatch()
 
+    const { title, body } = values
+
     return (
         <div>
             <form onSubmit={handleSubmit}>
@@ -18,7 +20,7 @@ const CreatePost = () =>
                     type="text"
                     placeholder='Enter Title'
                     onChange={(e) => setValues({ ...values, title: e.target.value })}
-                    value={ }
+                    value={title}
                 />
             </form>
         </div>
