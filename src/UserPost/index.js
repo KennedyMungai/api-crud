@@ -9,7 +9,7 @@ import LoadingCard from './LoadingCard'
 const UserPost = () =>
 {
     const [id, setId] = useState()
-    const [body, setbody] = useState(second)
+    const [bodyText, setBodyText] = useState()
 
     const navigate = useNavigate()
     const dispatch = useDispatch()
@@ -78,7 +78,7 @@ const UserPost = () =>
                                                     <>
                                                         <Input.TextArea
                                                             rows={4}
-                                                            value={ }
+                                                            value={bodyText}
                                                         />
                                                     </>
                                                 ) : (
