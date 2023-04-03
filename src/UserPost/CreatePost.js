@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { createPost } from '../redux/features/postSlice'
+import LoadingCard from './LoadingCard'
 
 
 const CreatePost = () =>
@@ -26,7 +27,24 @@ const CreatePost = () =>
 
     const showPostBlog = () =>
     {
-
+        return (
+            <>
+                {
+                    loading &&
+                    (<LoadingCard count={1} />) : (
+                <div className="site-card-border-less-wrapper">
+                    <Card
+                        type='inner'
+                        title={post[0].title}
+                    >
+                        <p>User Id: {post[0].id}</p>
+                        <span>{post[0].body}</span>
+                    </Card>
+                </div>
+                )
+                }
+            </>
+        )
     }
 
     return (
@@ -68,6 +86,11 @@ const CreatePost = () =>
                     </Button>
                 </Space>
             </form>
+            <br />
+            <br />
+            {
+                showPost && <div className="">{showPostBlog()}</div>
+            }
         </div>
     )
 }
