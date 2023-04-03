@@ -106,7 +106,7 @@ const UserPost = () =>
                                                                         }
                                                                     ))
 
-                                                                    dispatch(setEdit({ edit: false }))
+                                                                    dispatch(setEdit({ edit: false, body: "" }))
                                                                 }}
                                                             >
                                                                 Save
