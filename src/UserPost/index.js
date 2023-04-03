@@ -2,6 +2,7 @@ import { Button, Card, Input, Space } from 'antd'
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
+import { getPost } from '../redux/features/postSlice'
 
 
 const UserPost = () =>
@@ -16,6 +17,8 @@ const UserPost = () =>
         {
             window.alert("Please Provide an Id")
         }
+
+        dispatch(getPost({ id }))
     }
 
     return (
