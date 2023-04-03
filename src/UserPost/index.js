@@ -38,6 +38,7 @@ const UserPost = () =>
                 </Button>
                 <Button
                     type='primary'
+                    onClick={() => navigate("/createPost")}
                 >
                     Create User Post
                 </Button>
