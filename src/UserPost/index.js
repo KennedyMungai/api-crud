@@ -98,7 +98,7 @@ const UserPost = () =>
                                             style={{ cursor: 'pointer' }}
                                             type='primary'
                                             primary
-                                            onClick={() => dispatch(setEdit({ edit }))}
+                                            onClick={() => dispatch(setEdit({ edit: true, body: post[0].body }))}
                                         >
                                             Edit
                                         </Button>
