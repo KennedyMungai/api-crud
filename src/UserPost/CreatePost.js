@@ -13,7 +13,13 @@ const CreatePost = () =>
     return (
         <div>
             <form onSubmit={handleSubmit}>
-
+                <h1>Create Post</h1>
+                <input
+                    type="text"
+                    placeholder='Enter Title'
+                    onChange={(e) => setValues({ ...values, title: e.target.value })}
+                    value={ }
+                />
             </form>
         </div>
     )
