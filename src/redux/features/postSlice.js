@@ -11,6 +11,11 @@ export const deletePost = createAsyncThunk("post/deletePost", async ({ id }) =>
     return fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, { method: 'DELETE' }).then((res) => res.json())
 })
 
+export const createPost = createAsyncThunk("post/createPost", async () =>
+{
+    return fetch('https://jsonplaceholder.typicode.com/posts', { method: 'POST' }).then((res) => res.json())
+})
+
 const postSlice = createSlice(
     {
         name: "post",
