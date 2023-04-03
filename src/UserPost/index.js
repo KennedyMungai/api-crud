@@ -26,6 +26,11 @@ const UserPost = () =>
                 >
                     Fetch User Post
                 </Button>
+                <Button
+                    type='primary'
+                >
+                    Create User Post
+                </Button>
             </Space>
         </div>
     )
