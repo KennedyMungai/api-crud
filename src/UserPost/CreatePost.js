@@ -11,7 +11,11 @@ const CreatePost = () =>
     const dispatch = useDispatch()
 
     return (
-        <div>CreatePost</div>
+        <div>
+            <form onSubmit={handleSubmit}>
+
+            </form>
+        </div>
     )
 }
 
