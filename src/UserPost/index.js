@@ -90,6 +90,21 @@ const UserPost = () =>
                                                             value={body}
                                                             onChange={(e) => setBodyText(e.target.value)}
                                                         />
+                                                        <Space
+                                                            size='middle'
+                                                            style={{ marginTop: 5, marginLeft: 5 }}
+                                                        >
+                                                            <Button
+                                                                type='primary'
+                                                            >
+                                                                Save
+                                                            </Button>
+                                                            <Button
+                                                                type='primary'
+                                                            >
+                                                                Cancel
+                                                            </Button>
+                                                        </Space>
                                                     </>
                                                 ) : (
                                                     <span>{post[0].body}</span>
