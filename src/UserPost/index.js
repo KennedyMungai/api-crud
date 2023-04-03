@@ -61,8 +61,9 @@ const UserPost = () =>
                     ? (
                         <LoadingCard count={1} />
                     ) : (
-                        {
-                            post.length > 0 &&
+                        <>
+                            {
+                                post.length > 0 &&
                                 (<div className="site-card-border-less-wrapper">
                                     <Card
                                         type='inner'
@@ -71,7 +72,9 @@ const UserPost = () =>
                                         <p>User Id: {post[0].id}</p>
                                     </Card>
                                 </div>)
-                        }
+                            }
+                        </>
+
 
                     )
             }
