@@ -52,6 +52,20 @@ const postSlice = createSlice(
             {
                 state.loading = false
                 state.error = [action.payload]
+            },
+            [createPost.pending]: (state, action) =>
+            {
+                state.loading = true
+            },
+            [createPost.fulfilled]: (state, action) =>
+            {
+                state.loading = false
+                state.post = action.payload
+            },
+            [createPost.error]: (state, action) =>
+            {
+                state.loading = false
+                state.error = action.payload
             }
         }
     }
