@@ -114,7 +114,7 @@ const UserPost = () =>
                                                             <Button
                                                                 onClick={() =>
                                                                 {
-                                                                    dispatch(setEdit({ edit: false }))
+                                                                    dispatch(setEdit({ edit: false, body: "" }))
                                                                 }}
                                                             >
                                                                 Cancel
