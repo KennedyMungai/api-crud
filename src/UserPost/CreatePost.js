@@ -16,7 +16,7 @@ const CreatePost = () =>
         <div>
             <form onSubmit={handleSubmit}>
                 <h1>Create Post</h1>
-                <input
+                <Input
                     type="text"
                     placeholder='Enter Title'
                     onChange={(e) => setValues({ ...values, title: e.target.value })}
