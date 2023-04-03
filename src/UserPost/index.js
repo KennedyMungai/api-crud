@@ -7,7 +7,7 @@ import { getPost } from '../redux/features/postSlice'
 
 const UserPost = () =>
 {
-    const [id, setId] = useState()
+    const [id, setId] = useState(0)
     const navigate = useNavigate()
     const dispatch = useDispatch()
 
@@ -18,7 +18,8 @@ const UserPost = () =>
             window.alert("Please Provide an Id")
         }
 
-        dispatch(getPost({ id }))
+        dispatch(getPost({ id })).
+            setId(0)
     }
 
     return (
