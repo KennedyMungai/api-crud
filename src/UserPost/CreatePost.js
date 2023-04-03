@@ -31,6 +31,7 @@ const CreatePost = () =>
                     onChange={(e) => setValues({ ...values, body: e.target.value })}
                     value={body}
                     style={{ width: '400px' }}
+                    size='large'
                 />
             </form>
         </div>
