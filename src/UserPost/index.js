@@ -83,6 +83,13 @@ const UserPost = () =>
                                         >
                                             Delete
                                         </Button>
+                                        <Button
+                                            style={{ cursor: 'pointer' }}
+                                            type='primary'
+                                            danger
+                                        >
+                                            Edit
+                                        </Button>
                                     </Space>
                                 </div>)
                             }
