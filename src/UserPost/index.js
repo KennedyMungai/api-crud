@@ -2,7 +2,7 @@ import { Button, Card, Input, Space } from 'antd'
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-import { deletePost, getPost, setEdit } from '../redux/features/postSlice'
+import { deletePost, getPost, setEdit, updatePost } from '../redux/features/postSlice'
 import LoadingCard from './LoadingCard'
 
 
