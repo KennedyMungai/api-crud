@@ -16,6 +16,17 @@ const UserPost = () =>
                 value={id}
                 style={{ width: '300px' }}
             />
+            <br />
+            <Space
+                size='small'
+                style={{ margin: 10 }}
+            >
+                <Button
+                    type='primary'
+                >
+                    Fetch User Post
+                </Button>
+            </Space>
         </div>
     )
 }
