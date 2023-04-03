@@ -24,6 +24,11 @@ const CreatePost = () =>
         setShowPost(true)
     }
 
+    const showPostBlog = () =>
+    {
+
+    }
+
     return (
         <div>
             <form onSubmit={handleSubmit}>
